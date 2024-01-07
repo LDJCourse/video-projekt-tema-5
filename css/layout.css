@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Booking */
+
+.booking_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.booking_buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Newsletter */
+
+.newsletter_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input_container {
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input_container div {
+  display: flex;
+  align-items: center;
+}
+
+/* Activities  */
+.activities_container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.activities_container div {
+  place-self: center;
+}
+
+.activities_container div:nth-last-of-type(1) {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.activities_container div:nth-last-of-type(2) {
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+.activities_container div:nth-last-of-type(3) {
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.activities_container div:nth-last-of-type(4) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+
+/* Images */
+
+.images_container {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+/* Apply job */
+.apply_job_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer  */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  /* Booking  */
+  .activities_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .activities_container div {
+    place-self: center;
+  }
+
+  .booking_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .activities_container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .activities_container div {
+    display: flex;
+    flex-direction: column;
+    place-self: start;
+  }
+}
